@@ -1,16 +1,20 @@
-import PlayerCard from "../playercard/PlayerCard"
-import "./CardContainer.css"
-import {data} from "../../helper/data"
+import PlayerCard from "../playercard/PlayerCard";
+import "./CardContainer.css";
+import { data } from "../../helper/data";
 
 const CardContainer = () => {
   return (
-    <div className="card-container">
+    <div className="container">
+      <form action="" className="form">
         <input className="search-bar" type="text" placeholder="Search Player" />
-        {data.map((item)=><PlayerCard {...item}/>) }
-        
-      
+        <div className="card-container">
+          {data.map((item) => (
+            <PlayerCard {...item} />
+          ))}
+        </div>
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default CardContainer
+export default CardContainer;

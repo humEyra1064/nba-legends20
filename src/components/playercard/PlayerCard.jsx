@@ -1,15 +1,21 @@
 
-
+import "./PlayerCard.css"
+import {useState} from "react"
 const PlayerCard = ({name,img,statistics}) => {
-  return (
-    <div className="player-card">
-        <div>
-            <img src={img} alt="" />
-            <h3>{name}</h3>
-        </div>
+    const [showImage, setShowImage] = useState(true)
 
-        <div>
-     <ul>
+  return (
+    <div className="player-card"
+    onClick={()=>setShowImage(!showImage)}>
+        {showImage && (
+            <div>
+            <img src={img} alt="" />
+            <h3 className="title">{name}</h3>
+        </div>
+        )}
+
+        {!showImage && (
+            <ul>
         {statistics.map((item)=>{
             return(
                 <li>{item}</li>
@@ -17,7 +23,12 @@ const PlayerCard = ({name,img,statistics}) => {
         })}
         
      </ul>
-        </div>
+        )}
+        
+
+        
+     
+        
       
     </div>
   )

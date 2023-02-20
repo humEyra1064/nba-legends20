@@ -1,3 +1,8 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+ justify-content: space-evenly;
+}
 .search-bar{
     margin-top: 1rem;
     padding:1rem 7rem;
