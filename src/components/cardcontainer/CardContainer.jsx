@@ -1,20 +1,19 @@
 import PlayerCard from "../playercard/PlayerCard";
 
+import { Container } from "react-bootstrap";
 import { data } from "../../helper/data";
 
 const CardContainer = () => {
   return (
-    <div className="container">
-      <form action="" className="form">
-        <input className="search-bar" type="text" placeholder="Search Player" />
-        <div className="card-container">
-          {data.map((item) => (
-            <PlayerCard {...item} />
-          ))}
-        </div>
-      </form>
-    </div>
-  );
-};
+    
+      <Container className="card-container rounded-4 my-4 p-3">
 
-export default CardContainer;
+         {data.map((player)=>console.log(player))}
+      </Container>
+      
+      
+      );
+    };
+    
+    export default CardContainer;
+
