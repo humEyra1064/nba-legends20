@@ -7,6 +7,7 @@ import { data } from "../../helper/data";
 import { useState } from "react";
 
 const CardContainer = () => {
+  const [search, setSearch] = useState("");
   return (
     <>
       <Form.Control
