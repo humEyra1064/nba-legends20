@@ -1,5 +1,7 @@
 import PlayerCard from "../playercard/PlayerCard";
-
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
 import { Container } from "react-bootstrap";
 import { data } from "../../helper/data";
 
@@ -12,7 +14,7 @@ const CardContainer = () => {
         className="w-50 m-auto"
         onChange={(e) => setSearch(e.target.value)}
       />
-      
+
       <Container className="card-container rounded-4 my-4 p-3">
   <Row className="g-3 justify-content-center">
           {data
