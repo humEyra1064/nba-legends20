@@ -1,12 +1,17 @@
+import { Container, Image } from "react-bootstrap"
 import logo from "../../assets/nba-logo.png"
 
 
 const Header = () => {
   return (
-    <div className="header">
-      <img src={logo} alt="" />
+   
+      <Container>
+        
       <h1>NBA LEGENDS</h1>
-    </div>
+      <Image src={logo} width="200px"></Image>
+      </Container>
+      
+  
   )
 }
 
