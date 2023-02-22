@@ -1,5 +1,5 @@
 
-import "./PlayerCard.css"
+
 import {useState} from "react"
 const PlayerCard = ({name,img,statistics}) => {
     const [showImage, setShowImage] = useState(true)

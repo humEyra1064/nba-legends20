@@ -1,5 +1,5 @@
 import PlayerCard from "../playercard/PlayerCard";
-import "./CardContainer.css";
+
 import { data } from "../../helper/data";
 
 const CardContainer = () => {
